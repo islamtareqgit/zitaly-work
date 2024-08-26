@@ -1,3 +1,13 @@
+<?php
+
+
+if( file_exists( __DIR__ .'/autoload.php')){
+    include_once __DIR__.'/autoload.php';
+}
+
+?>
+
+
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
@@ -43,8 +53,10 @@
 	<div class="top">
 		<div class="zerogrid">
 			<ul class="number f-left">
-				<li class="mail"><p>ContacUst@Gmail.com</p></li>
-				<li class="phone"><p>08 88888 88888</p></li>
+				
+			<li class="fa fa-phone-square" aria-hidden="true"></class><?php echo $topbar["email"]?>
+				<li class="fa fa-envelope-o" aria-hidden="true"></class>
+				<?php echo $topbar["phone"]?></li>
 			</ul>
 			<ul class="top-social f-right">
 				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
